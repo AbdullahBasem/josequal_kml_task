@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::controller(KmlController::class)->middleware('auth:sanctum')->group(function () {
     Route::get('/', 'index');
     Route::get('kml/create', 'createView')->name('kml.create');
-    Route::get('kml/create', 'createSubmit')->name('kml.add');
+    Route::post('kml/add', 'createSubmit')->name('kml.add');
     Route::get('kml/view/{file}', 'view')->name('kml.view');
     Route::get('kml/delete/{file}', 'delete')->name('kml.delete');
 
