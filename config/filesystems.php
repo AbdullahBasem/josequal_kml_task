@@ -14,7 +14,7 @@ return [
     */
 
     'default' => env('FILESYSTEM_DISK', 'local'),
-
+    'google_key'=>env('GOOGLE_KEY'),
     /*
     |--------------------------------------------------------------------------
     | Filesystem Disks

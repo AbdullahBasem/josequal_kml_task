@@ -30,6 +30,6 @@
 
     </script>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV9Ug5isT5el2rI6JLNAdTcnwIuPgy35g&callback=initMap&v=weekly"
+        src="https://maps.googleapis.com/maps/api/js?key={{config('filesystems.google_key')}}=initMap&v=weekly"
         defer></script>
 @endsection
